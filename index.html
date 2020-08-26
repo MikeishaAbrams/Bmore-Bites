@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="index.js"></script>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+        <!-- build:css css/main.css -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <!-- endbuild -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    
+        <title>Bmore Bites</title>
+  </head>
+
+  <body>
+    <header class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 col-sm-3 col-md-2 align-self-center">
+            <img src="img/logo.png" class="img-fluid" />
+          </div>
+          <div class="col">
+            <h1>Bmore Bites</h1>
+            <h2>eat food you love</h2>
+          </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+      <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img src="img/logo.png" height="30" width="30"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#nucampNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="nucampNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  ><i class="fa fa-home fa-lg"></i> Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutus.html"
+                  ><i class="fa fa-info fa-lg"></i> About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="fa fa-list fa-lg"></i> Events</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactus.html"
+                  ><i class="fa fa-address-card fa-lg"></i> Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="row row-content">
+          <div class="col-md-8 mx-auto">
+            <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#homeCarousel"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#homeCarousel" data-slide-to="1"></li>
+                <li data-target="#homeCarousel" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    class="d-block w-100"
+                    src="img/dovecotecafe.PNG"
+                    alt="Dove Cote Cafe"
+                  />
+                  <div class="carousel-caption">
+                    <h3>Dove Cote Cafe</h3>
+                    <p class="d-none d-sm-block">
+                      This charming little cafe in Reservoir Hill serving up 
+                      this upside-down peach cake as a southern yummy dessert.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="img/landofkush.PNG"
+                    alt="Land of Kush"
+                  />
+                  <div class="carousel-caption">
+                    <h3>Land of Kush</h3>
+                    <p class="d-none d-sm-block">
+                      Vegan and vegetarian soul food so savory
+                      that you’ll forget it’s also healthy.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="img/berriesbyquicha.PNG"
+                    alt="Berries by Quicha"
+                  />
+                  <div class="carousel-caption">
+                    <h3>Berries by Quicha</h3>
+                    <p class="d-none d-sm-block">
+                      Gourmet chocolate-covered strawberries are irresistible
+                      with flavors like vodka-infused and cheesecake-stuffed.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#homeCarousel"
+                role="button"
+                data-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#homeCarousel"
+                role="button"
+                data-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">Next</span>
+              </a>
+              <button class="btn btn-danger btn-sm" id="carouselButton">
+                <i class="fa fa-pause"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+  
+        <div class="row row-content align-items-center">
+          <div class="col-sm-4 order-sm-last col-md-3">
+            <h2 class="text-sm-right">Cozy Cafe</h2>
+          </div>
+          <div class="col">
+            <div class="media">
+              <img
+                class="d-flex mr-3 img-thumbnail"
+                src="img/dovecote_decor2.PNG"
+                alt="Dovecote Decor"
+              />
+              <div class="media-body align-self-center">
+                <h3>Dovecote Cafe</h3>
+                <p class="d-none d-sm-block">
+                  Nestled in Reservoir Hill, Dovecote Café is a
+                  community based hub and food oasis.
+                  Our name is meant to evoke a sense of communal nesting. 
+                  In addition to enjoying the selection of hand crafted food and drinks, 
+                  guests are meant to sit, stay, and gather at Dovecote Café.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="row row-content align-items-center">
+          <div class="col-sm-4 col-md-3">
+            <h2>Soul Food</h2>
+          </div>
+          <div class="col">
+            <div class="media">
+              <div class="media-body align-self-center">
+                <h3>Land of Kush</h3>
+                <p class="d-none d-sm-block">
+                  Everything on the menu is vegetarian friendly but tastes like the real deal,
+                  from the crab cakes and BBQ ribs to the curry chicken and sweet potato cake.
+                </p>
+              </div>
+              <img
+                class="d-flex ml-3 img-thumbnail"
+                src="img/landofkush_people.PNG"
+                alt="Land of Kush People"
+              />
+            </div>
+          </div>
+        </div>
+  
+        <div class="row row-content align-items-center">
+          <div class="col-sm-4 order-sm-last col-md-3">
+            <h2 class="text-sm-right">Tasty Sweet</h2>
+          </div>
+          <div class="col">
+            <div class="media">
+              <img
+                class="d-flex mr-3 img-thumbnail"
+                src="img/berriesbyquicha_store.PNG"
+                alt="Berries By Quicha Store"
+              />
+              <div class="media-body align-self-center">
+                <h3>Berries by Quicha</h3>
+                <p class="d-none d-sm-block">
+                  A local Gourmet chocolate covered strawberry shoppe,
+                  combining only the freshest berries and quality ingredients to create a delightful treat.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <footer class="site-footer">
+      <div class="container">
+          <div class="row">
+              <div class="col-4 col-sm-2 offset-1">
+                  <h5>Links</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="aboutus.html">About</a></li>
+                      <li><a href="#">Events</a></li>
+                      <li><a href="#">Contact</a></li>
+                  </ul>
+              </div>
+              <div class="col-6 col-sm-5 text-center">
+                  <h5>Social</h5>
+                  <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                  <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                  <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                  <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+              </div>
+              <div class="col-sm-4 text-center">
+                  <a role="button" class="btn btn-link" href="tel:+12535651284"><i class="fa fa-phone"></i> 1-253-565-1284</a><br />
+                  <a role="button" class="btn btn-link" href="mailto:contactus@bmorebites.co"><i class="fa fa-envelope-o"></i> contactus@bmorebites.co</a>
+              </div>
+         </div>
+      </div>
+  </footer>
+
+  <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+  <!-- build:js js/main.js -->
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!--<script src="js/scripts.js"></script>-->
+  <!-- endbuild -->
+
+
+  </body>
+  
+</html>
